@@ -1,0 +1,29 @@
+/* Footer */
+
+footer {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: $bg-azulcorp;
+    border-top: 2px solid #f33b00;
+}
+
+.caja-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icono-footer {
+    padding: 10px;
+}
+
+.copyright {
+    font-size: nth($font-size, 9);
+    font-family: $fontype-sans-serif;
+    font-weight: 300;
+    color: $text-bco;
+    text-align: center;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,24 @@
+/* Packs Digitales */
+
+$digital-basic:(color-basic: nth($color-social, 1), bg-color-basic: nth($color-social, 1), );
+$digital-mega:(color-mega: nth($color-social, 2), bg-color-mega: nth($color-social, 2), );
+$digital-ultra:(color-ultra: nth($color-social, 3), bg-color-ultra: nth($color-social, 3), );
+
+/* Packs Branding */
+
+$brand-starter:(color-starter: nth($color-branding, 1), bg-color-starter: nth($color-branding, 1), );
+$brand-bronce:(color-bronce: nth($color-branding, 2), bg-color-bronce: nth($color-branding, 2), );
+$brand-plata:(color-plata: nth($color-branding, 3), bg-color-plata: nth($color-branding, 3), );
+$brand-oro:(color-oro: nth($color-branding, 4), bg-color-oro: nth($color-branding, 4), );
+
+/* Tarjetas Servicios */
+
+$serv-1:(color-serv1: nth($color-serv, 1), bg-color-serv1: nth($color-serv, 1), );
+$serv-2:(color-serv2: nth($color-serv, 2), bg-color-serv2: nth($color-serv, 2), );
+$serv-3:(color-serv3: nth($color-serv, 3), bg-color-serv3: nth($color-serv, 3), );
+$serv-4:(color-serv4: nth($color-serv, 4), bg-color-serv4: nth($color-serv, 4), );
+$serv-5:(color-serv5: nth($color-serv, 5), bg-color-serv5: nth($color-serv, 5), );
+$serv-6:(color-serv6: nth($color-serv, 6), bg-color-serv6: nth($color-serv, 6), );
+$serv-7:(color-serv7: nth($color-serv, 7), bg-color-serv7: nth($color-serv, 7), );
+$serv-8:(color-serv8: nth($color-serv, 8), bg-color-serv8: nth($color-serv, 8), );
+$serv-9:(color-serv9: nth($color-serv, 9), bg-color-serv9: nth($color-serv, 9), );

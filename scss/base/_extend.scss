@@ -1,0 +1,27 @@
+/* Encabezados Páginas */
+
+%encabezado {
+    width: 100%;
+    margin-top: 85px;
+    padding-top: 40px;
+    padding-bottom: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    background-repeat: no-repeat;
+    text-shadow: 3px 3px 5px black;
+    transition: all 2s;
+    .titular {
+        font-family: $fontype-serif;
+        color: $text-naranja;
+        margin-top: 0;
+        padding: 0px 5px 0 5px;
+        font-size: nth($font-size, 1);
+        letter-spacing: -2;
+        word-spacing: -1;
+        text-align: center;
+        @media only screen and (max-width: 480px) {
+            font-size: nth($font-size, 10);
+        }
+    }
+}

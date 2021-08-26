@@ -1,0 +1,11 @@
+/* Botón fondo naranja y marco blanco */
+
+.button-mas {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: $bg-naranjacorp;
+    text-decoration: none;
+    text-align: center;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 6);
+}

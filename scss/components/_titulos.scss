@@ -1,0 +1,69 @@
+/* Apariencia Títulos */
+
+h1 {
+    color: $text-bco;
+    font-family: $fontype-sans-serif;
+    margin-bottom: 0;
+    padding: 0px 5px 0 5px;
+    font-size: nth($font-size, 2);
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+
+/* Los h2 son Títulos en color blanco con fondo azul */
+
+h2 {
+    color: $text-bco;
+    font-family: $fontype-sans-serif;
+    background-color: $bg-azulcorp;
+    width: 100%;
+    font-size: nth($font-size, 3);
+    font-weight: 300;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Los h3 son Títulos en color naranja sin fondo */
+
+h3 {
+    color: $text-naranja;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 3);
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Los h4 son Sub-títulos en color azul sin fondo */
+
+h4 {
+    color: $text-azul;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 4);
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* Los h5 son Sub-títulos en color naranja sin fondo */
+
+h5 {
+    color: $text-naranja;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 5);
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}

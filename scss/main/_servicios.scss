@@ -1,0 +1,112 @@
+/* Grid Servicios */
+
+.contenedor-tarjetaserv {
+    @include contenedor-tarjetaserv
+}
+
+.tarjetaserv {
+    @include tarjetaserv
+}
+
+.tarjetaserv-image {
+    @include tarjetaserv-image
+}
+
+
+/* tarjeta 1 */
+
+.tarjetaserv-text {
+    @include tarjetaserv-text
+}
+
+.tarjetaserv-pie {
+    @include tarjetaserv-pie
+}
+
+
+/* tarjeta2 */
+
+.tarjetaserv-text.tarjetaserv2 .titulo {
+    color: map-get($serv-2, color-serv2);
+}
+
+.tarjetaserv-pie.tarjetaserv2 {
+    background-color: map-get($serv-2, bg-color-serv2);
+}
+
+
+/* tarjeta3 */
+
+.tarjetaserv-text.tarjetaserv3 .titulo {
+    color: map-get($serv-3, color-serv3);
+}
+
+.tarjetaserv-pie.tarjetaserv3 {
+    background-color: map-get($serv-3, bg-color-serv3);
+}
+
+
+/* tarjeta4 */
+
+.tarjetaserv-text.tarjetaserv4 .titulo {
+    color: map-get($serv-4, color-serv4);
+}
+
+.tarjetaserv-pie.tarjetaserv4 {
+    background-color: map-get($serv-4, bg-color-serv4);
+}
+
+
+/* tarjeta5 */
+
+.tarjetaserv-text.tarjetaserv5 .titulo {
+    color: map-get($serv-5, color-serv5);
+}
+
+.tarjetaserv-pie.tarjetaserv5 {
+    background-color: map-get($serv-5, bg-color-serv5);
+}
+
+
+/* tarjeta6 */
+
+.tarjetaserv-text.tarjetaserv6 .titulo {
+    color: map-get($serv-6, color-serv6);
+}
+
+.tarjetaserv-pie.tarjetaserv6 {
+    background-color: map-get($serv-6, bg-color-serv6);
+}
+
+
+/* tarjeta7 */
+
+.tarjetaserv-text.tarjetaserv7 .titulo {
+    color: map-get($serv-7, bg-color-serv7);
+}
+
+.tarjetaserv-pie.tarjetaserv7 {
+    background-color: map-get($serv-7, bg-color-serv7);
+}
+
+
+/* tarjeta8 */
+
+.tarjetaserv-text.tarjetaserv8 .titulo {
+    color: map-get($serv-8, color-serv8);
+}
+
+.tarjetaserv-pie.tarjetaserv8 {
+    background-color: map-get($serv-8, bg-color-serv8);
+}
+
+
+/* tarjeta9 */
+
+.tarjetaserv-text.tarjetaserv9 .titulo {
+    color: map-get($serv-9, color-serv9);
+}
+
+.tarjetaserv-pie.tarjetaserv9 {
+    background-color: map-get($serv-9, bg-color-serv9);
+}

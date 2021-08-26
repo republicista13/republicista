@@ -1,0 +1,25 @@
+/* Contenido Contacto */
+
+.contenido-contacto {
+    background-color: none;
+    font-family: $fontype-sans-serif;
+    font-weight: 400;
+    font-size: nth($font-size, 6);
+    letter-spacing: -1px;
+    text-align: left;
+    img {
+        padding-right: 5px;
+    }
+    a {
+        text-decoration: none;
+        &:link {
+            color: $text-azul;
+        }
+        &:visited {
+            color: $text-gris;
+        }
+        &:hover {
+            color: $text-naranja;
+        }
+    }
+}

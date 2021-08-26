@@ -1,0 +1,116 @@
+/* Grid Packs Branding */
+
+.contenedor-tarjetasbr {
+    @include contenedor-tarjetas-bys(100%, auto, 20px, flex, wrap, space-evenly, url(../imagenes/back-rojo.png), repeat, $bg-bordo)
+}
+
+.tarjetabr {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px auto 70px;
+    grid-template-areas: "image" "text" "pie";
+    background-image: url(../imagenes/background.jpg);
+    background-size: cover;
+    border-radius: 18px;
+    box-shadow: $sombra-caja;
+    font-family: $fontype-sans-serif;
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 30px 15px 30px 15px;
+    &:hover {
+        transform: scale(1.10);
+        box-shadow: $sombra-caja-hover;
+    }
+}
+
+
+/* tarjeta 1 */
+
+.tarjetabr-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0;
+}
+
+.tarjetabr-text {
+    grid-area: text;
+    margin: 18px;
+    align-content: center;
+    .titulo {
+        font-size: nth($font-size, 4);
+        letter-spacing: -1px;
+        margin: 0;
+        color: map-get($brand-starter, color-starter);
+        text-shadow: $sombra-textos;
+    }
+    .subtitulo {
+        color: $text-grisclaro;
+        font-size: nth($font-size, 6);
+        margin: 0;
+    }
+    p {
+        color: $text-bco;
+        font-size: nth($font-size, 7);
+    }
+}
+
+.tarjetabr-pie {
+    grid-area: pie;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: map-get($brand-starter, bg-color-starter);
+    align-items: center;
+    justify-content: center;
+    .icono {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .consulte {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+        color: $text-bco;
+        font-size: nth($font-size, 8);
+    }
+}
+
+
+/* tarjeta2 */
+
+.tarjetabr-text.tarjetabr2 .titulo {
+    color: map-get($brand-bronce, color-bronce);
+}
+
+.tarjetabr-pie.tarjetabr2 {
+    background-color: map-get($brand-bronce, bg-color-bronce);
+}
+
+
+/* tarjeta3 */
+
+.tarjetabr-text.tarjetabr3 .titulo {
+    color: map-get($brand-plata, color-plata);
+}
+
+.tarjetabr-pie.tarjetabr3 {
+    background-color: map-get($brand-plata, bg-color-plata);
+}
+
+
+/* tarjeta4 */
+
+.tarjetabr-text.tarjetabr4 .titulo {
+    color: map-get($brand-oro, color-oro);
+}
+
+.tarjetabr-pie.tarjetabr4 {
+    background-color: map-get($brand-oro, color-oro);
+}

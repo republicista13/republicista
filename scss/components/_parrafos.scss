@@ -1,0 +1,31 @@
+/* Apariencia parrafo en bloque color negro sin fondo */
+
+.parrafo-simple {
+    color: $text-oscuro;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 7);
+    width: 100%;
+    padding: 15px 50px 15px 50px;
+    text-align: justify;
+    margin: 0%;
+    @media only screen and (max-width: 480px) {
+        text-align: center;
+    }
+}
+
+
+/* Apariencia parrafo en bloque color naranja */
+
+.parrafo-simple-naranja {
+    color: $text-bco;
+    font-family: $fontype-sans-serif;
+    font-size: nth($font-size, 7);
+    width: 100%;
+    padding: 15px 50px 15px 50px;
+    background-color: $bg-naranjacorp;
+    text-align: justify;
+    margin: 0%;
+    @media only screen and (max-width: 480px) {
+        text-align: center;
+    }
+}

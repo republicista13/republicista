@@ -1,0 +1,46 @@
+/* Apariencia Encabezado Index */
+
+.encabezado-index {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-index.jpg");
+}
+
+
+/* Apariencia Encabezado Contacto */
+
+.encabezado-contacto {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-contacto.jpg");
+}
+
+
+/* Apariencia Encabezado Branding Packs */
+
+.encabezado-branding {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-branding.jpg");
+}
+
+
+/* Apariencia Encabezado Social Packs */
+
+.encabezado-social {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-social.jpg");
+}
+
+
+/* Apariencia Encabezado Portfolio */
+
+.encabezado-portfolio {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-portfolio.jpg");
+}
+
+
+/* Apariencia Encabezado Servicios */
+
+.encabezado-servicios {
+    @extend %encabezado;
+    background-image: url("../imagenes/tops/top-servicios.jpg");
+}

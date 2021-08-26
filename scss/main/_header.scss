@@ -1,0 +1,44 @@
+    /* Header */
+    
+    header {
+        box-shadow: $sombra-caja;
+        font-family: $fontype-sans-serif;
+        font-size: nth($font-size, 5);
+        text-decoration: none;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        .navbar {
+            background-color: $bg-nav;
+            .navbar-toggler {
+                background-color: $bg-naranjacorp;
+            }
+            .navbar-collapse {
+                flex-grow: 0;
+                .navbar-nav {
+                    .nav-link {
+                        color: $text-azul;
+                        padding-right: 25px;
+                    }
+                    .active {
+                        color: $text-naranja;
+                    }
+                    .nav-link:hover {
+                        color: $text-naranja;
+                    }
+                    .dropdown-menu {
+                        background-color: $bg-nav;
+                    }
+                    .dropdown-item {
+                        color: $text-azul;
+                        font-family: $fontype-sans-serif;
+                        font-size: nth($font-size, 5);
+                        background-color: $bg-nav;
+                    }
+                    .dropdown-item:hover {
+                        color: $text-naranja;
+                        background-color: $bg-nav1;
+                    }
+                }
+            }
+        }
+    }

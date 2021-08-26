@@ -1,0 +1,100 @@
+/* Elementos Card Servicios */
+
+@mixin contenedor-tarjetaserv {
+    width: 100%;
+    height: auto;
+    padding: 15px 5px 15px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: $gradient-naranzul;
+}
+
+@mixin tarjetaserv {
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: 230px auto 70px;
+    grid-template-areas: "image" "text" "pie";
+    background-image: url(../imagenes/background.jpg);
+    background-size: cover;
+    border-radius: 18px;
+    box-shadow: $sombra-caja;
+    font-family: $fontype-sans-serif;
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 30px 15px 30px 15px;
+    &:hover {
+        transform: scale(1.10);
+        box-shadow: $sombra-caja-hover;
+    }
+}
+
+@mixin tarjetaserv-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@mixin tarjetaserv-text {
+    grid-area: text;
+    margin: 15px;
+    align-content: center;
+    .titulo {
+        font-size: nth($font-size, 4);
+        letter-spacing: -1px;
+        margin: 0;
+        color: map-get($serv-1, color-serv1);
+        text-shadow: $sombra-textos;
+    }
+    .subtitulo {
+        color: $text-grisclaro;
+        font-size: nth($font-size, 6);
+        margin: 0;
+    }
+    p {
+        color: $text-bco;
+        font-size: nth($font-size, 7);
+    }
+}
+
+@mixin tarjetaserv-pie {
+    grid-area: pie;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: map-get($serv-1, bg-color-serv1);
+    align-items: center;
+    justify-content: center;
+    .icono {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .consulte {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+        color: $text-bco;
+        font-size: nth($font-size, 8);
+    }
+}
+
+
+/* Contenedor Tarjetas Branding y Social Media */
+
+@mixin contenedor-tarjetas-bys($ancho, $alto, $pad, $display, $flex-w, $justify-cont, $bg-image, $bg-repeat, $bg-color) {
+    width: $ancho;
+    height: $alto;
+    padding: $pad;
+    display: $display;
+    flex-wrap: $flex-w;
+    justify-content: $justify-cont;
+    background-image: $bg-image;
+    background-repeat: $bg-repeat;
+    background-color: $bg-color;
+}

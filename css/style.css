@@ -1,0 +1,832 @@
+@charset "UTF-8";
+/* Familia de Fuentes a usar en la Web */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+/* font-family: 'Manrope', sans-serif;
+    Extra-light 200
+    Light 300
+    Regular 400
+    Bold 700
+    Extra-bold 800
+    font-family: 'Berkshire Swash', cursive;
+*/
+/* Tamaños de fuentes */
+/* Colores Servicios */
+/* Colores Packs Branding */
+/* Colores Packs Social */
+/* Colores Botón Flotante */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezados Páginas */
+.encabezado-servicios, .encabezado-portfolio, .encabezado-social, .encabezado-branding, .encabezado-contacto, .encabezado-index {
+  width: 100%;
+  margin-top: 85px;
+  padding-top: 40px;
+  padding-bottom: 400px;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  background-repeat: no-repeat;
+  text-shadow: 3px 3px 5px black;
+  transition: all 2s;
+}
+.encabezado-servicios .titular, .encabezado-portfolio .titular, .encabezado-social .titular, .encabezado-branding .titular, .encabezado-contacto .titular, .encabezado-index .titular {
+  font-family: "Berkshire Swash", cursive;
+  color: #ff3b00;
+  margin-top: 0;
+  padding: 0px 5px 0 5px;
+  font-size: 3.5rem;
+  letter-spacing: -2;
+  word-spacing: -1;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .encabezado-servicios .titular, .encabezado-portfolio .titular, .encabezado-social .titular, .encabezado-branding .titular, .encabezado-contacto .titular, .encabezado-index .titular {
+    font-size: 3rem;
+  }
+}
+
+/* Packs Digitales */
+/* Packs Branding */
+/* Tarjetas Servicios */
+/* Elementos Card Servicios */
+/* Contenedor Tarjetas Branding y Social Media */
+/* Header */
+header {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+}
+header .navbar {
+  background-color: #cac8e9;
+}
+header .navbar .navbar-toggler {
+  background-color: #ff3b00;
+}
+header .navbar .navbar-collapse {
+  flex-grow: 0;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link {
+  color: #20228c;
+  padding-right: 25px;
+}
+header .navbar .navbar-collapse .navbar-nav .active {
+  color: #ff3b00;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #ff3b00;
+}
+header .navbar .navbar-collapse .navbar-nav .dropdown-menu {
+  background-color: #cac8e9;
+}
+header .navbar .navbar-collapse .navbar-nav .dropdown-item {
+  color: #20228c;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  background-color: #cac8e9;
+}
+header .navbar .navbar-collapse .navbar-nav .dropdown-item:hover {
+  color: #ff3b00;
+  background-color: #d1d0f0;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-color: #20228c;
+  border-top: 2px solid #f33b00;
+}
+
+.caja-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icono-footer {
+  padding: 10px;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* Grid Servicios */
+.contenedor-tarjetaserv {
+  width: 100%;
+  height: auto;
+  padding: 15px 5px 15px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(#20228c, #ff3b00);
+}
+
+.tarjetaserv {
+  display: grid;
+  grid-template-columns: 220px;
+  grid-template-rows: 230px auto 70px;
+  grid-template-areas: "image" "text" "pie";
+  background-image: url(../imagenes/background.jpg);
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  transition: 0.5s ease;
+  margin: 30px 15px 30px 15px;
+}
+.tarjetaserv:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.tarjetaserv-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* tarjeta 1 */
+.tarjetaserv-text {
+  grid-area: text;
+  margin: 15px;
+  align-content: center;
+}
+.tarjetaserv-text .titulo {
+  font-size: 1.56rem;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #bf5c06;
+  text-shadow: 2px 2px 3px black;
+}
+.tarjetaserv-text .subtitulo {
+  color: #bebebe;
+  font-size: 1.12rem;
+  margin: 0;
+}
+.tarjetaserv-text p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.tarjetaserv-pie {
+  grid-area: pie;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #bf5c06;
+  align-items: center;
+  justify-content: center;
+}
+.tarjetaserv-pie .icono {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.tarjetaserv-pie .consulte {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 0.93rem;
+}
+
+/* tarjeta2 */
+.tarjetaserv-text.tarjetaserv2 .titulo {
+  color: #00b7ff;
+}
+
+.tarjetaserv-pie.tarjetaserv2 {
+  background-color: #00b7ff;
+}
+
+/* tarjeta3 */
+.tarjetaserv-text.tarjetaserv3 .titulo {
+  color: #ffae00;
+}
+
+.tarjetaserv-pie.tarjetaserv3 {
+  background-color: #ffae00;
+}
+
+/* tarjeta4 */
+.tarjetaserv-text.tarjetaserv4 .titulo {
+  color: #aca088;
+}
+
+.tarjetaserv-pie.tarjetaserv4 {
+  background-color: #aca088;
+}
+
+/* tarjeta5 */
+.tarjetaserv-text.tarjetaserv5 .titulo {
+  color: #ff0095;
+}
+
+.tarjetaserv-pie.tarjetaserv5 {
+  background-color: #ff0095;
+}
+
+/* tarjeta6 */
+.tarjetaserv-text.tarjetaserv6 .titulo {
+  color: #001aff;
+}
+
+.tarjetaserv-pie.tarjetaserv6 {
+  background-color: #001aff;
+}
+
+/* tarjeta7 */
+.tarjetaserv-text.tarjetaserv7 .titulo {
+  color: #ff002b;
+}
+
+.tarjetaserv-pie.tarjetaserv7 {
+  background-color: #ff002b;
+}
+
+/* tarjeta8 */
+.tarjetaserv-text.tarjetaserv8 .titulo {
+  color: #158000;
+}
+
+.tarjetaserv-pie.tarjetaserv8 {
+  background-color: #158000;
+}
+
+/* tarjeta9 */
+.tarjetaserv-text.tarjetaserv9 .titulo {
+  color: #b4006f;
+}
+
+.tarjetaserv-pie.tarjetaserv9 {
+  background-color: #b4006f;
+}
+
+/* Grid Portfolio */
+.grid-background {
+  background-image: linear-gradient(#20228c, #ff3b00);
+}
+
+.portfolio-grid-contenedor1 {
+  display: grid;
+  margin: auto;
+  padding: 15px;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 5px;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 5px;
+  grid-template-areas: "c1-f1 c2-f1 c3-f1" "c1-f2 c2-f2 c3-f2" "c1-f3 c2-f3 c3-f3" "c1-f4 c2-f4 c3-f4" "c1-f5 c2-f5 c3-f5";
+  width: 80%;
+}
+.portfolio-grid-contenedor1 img {
+  width: 100%;
+  transition-property: all 2s;
+}
+.portfolio-grid-contenedor1 img:hover {
+  transform: scale(1.3);
+  border: solid 2px white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .portfolio-grid-contenedor1 .portfolio-grid-contenedor1 {
+    grid-template-areas: "c1-f1 c2-f1 c3-f1" "c1-f2 c2-f2 c3-f2" "c1-f3 c2-f3 c3-f3" "c1-f4 c2-f4 c3-f4" "c1-f5 c2-f5 c3-f5";
+    width: 100vw;
+  }
+}
+
+.casilla-1-1 {
+  grid-area: c1-f1;
+}
+
+.casilla-1-2 {
+  grid-area: c2-f1;
+}
+
+.casilla-1-3 {
+  grid-area: c3-f1;
+}
+
+.casilla-2-1 {
+  grid-area: c1-f2;
+}
+
+.casilla-2-2 {
+  grid-area: c2-f2;
+}
+
+.casilla-2-3 {
+  grid-area: c3-f2;
+}
+
+.casilla-3-1 {
+  grid-area: c1-f3;
+}
+
+.casilla-3-2 {
+  grid-area: c2-f3;
+}
+
+.casilla-3-3 {
+  grid-area: c3-f3;
+}
+
+.casilla-4-1 {
+  grid-area: c1-f4;
+}
+
+.casilla-4-2 {
+  grid-area: c2-f4;
+}
+
+.casilla-4-3 {
+  grid-area: c3-f4;
+}
+
+.casilla-5-1 {
+  grid-area: c1-f5;
+}
+
+.casilla-5-2 {
+  grid-area: c2-f5;
+}
+
+.casilla-5-3 {
+  grid-area: c3-f5;
+}
+
+/* Contenido Contacto */
+.contenido-contacto {
+  background-color: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.12rem;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.contenido-contacto img {
+  padding-right: 5px;
+}
+.contenido-contacto a {
+  text-decoration: none;
+}
+.contenido-contacto a:link {
+  color: #20228c;
+}
+.contenido-contacto a:visited {
+  color: #555555;
+}
+.contenido-contacto a:hover {
+  color: #ff3b00;
+}
+
+/* Grid Packs Digitales */
+.contenedor-tarjetapack {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url(../imagenes/back-rojo.png);
+  background-repeat: repeat;
+  background-color: #5c0000;
+}
+
+.tarjetapack {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 300px auto 70px;
+  grid-template-areas: "image" "text" "pie";
+  background-image: url(../imagenes/background.jpg);
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  transition: 0.5s ease;
+  margin: 30px;
+}
+.tarjetapack:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* tarjeta 1 */
+.tarjetapack-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.tarjetapack-text {
+  grid-area: text;
+  margin: 18px;
+  align-content: center;
+}
+.tarjetapack-text .titulo {
+  font-size: 1.56rem;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #ff076e;
+  text-shadow: 2px 2px 3px black;
+}
+.tarjetapack-text .subtitulo {
+  color: #bebebe;
+  font-size: 1.12rem;
+  margin: 0;
+}
+.tarjetapack-text p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.tarjetapack-pie {
+  grid-area: pie;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ff076e;
+  align-items: center;
+  justify-content: center;
+}
+.tarjetapack-pie .icono {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.tarjetapack-pie .consulte {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 0.93rem;
+}
+
+/* tarjeta2 */
+.tarjetapack-text.tarjetapack2 .titulo {
+  color: #ff4d07;
+}
+
+.tarjetapack-pie.tarjetapack2 {
+  background-color: #ff4d07;
+}
+
+/* tarjeta3 */
+.tarjetapack-text.tarjetapack3 .titulo {
+  color: #00bd3f;
+}
+
+.tarjetapack-pie.tarjetapack3 {
+  background-color: #00bd3f;
+}
+
+/* Grid Packs Branding */
+.contenedor-tarjetasbr {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url(../imagenes/back-rojo.png);
+  background-repeat: repeat;
+  background-color: #5c0000;
+}
+
+.tarjetabr {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 250px auto 70px;
+  grid-template-areas: "image" "text" "pie";
+  background-image: url(../imagenes/background.jpg);
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  transition: 0.5s ease;
+  margin: 30px 15px 30px 15px;
+}
+.tarjetabr:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* tarjeta 1 */
+.tarjetabr-image {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+}
+
+.tarjetabr-text {
+  grid-area: text;
+  margin: 18px;
+  align-content: center;
+}
+.tarjetabr-text .titulo {
+  font-size: 1.56rem;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #e60000;
+  text-shadow: 2px 2px 3px black;
+}
+.tarjetabr-text .subtitulo {
+  color: #bebebe;
+  font-size: 1.12rem;
+  margin: 0;
+}
+.tarjetabr-text p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.tarjetabr-pie {
+  grid-area: pie;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #e60000;
+  align-items: center;
+  justify-content: center;
+}
+.tarjetabr-pie .icono {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.tarjetabr-pie .consulte {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 0.93rem;
+}
+
+/* tarjeta2 */
+.tarjetabr-text.tarjetabr2 .titulo {
+  color: #b87333;
+}
+
+.tarjetabr-pie.tarjetabr2 {
+  background-color: #b87333;
+}
+
+/* tarjeta3 */
+.tarjetabr-text.tarjetabr3 .titulo {
+  color: #999999;
+}
+
+.tarjetabr-pie.tarjetabr3 {
+  background-color: #999999;
+}
+
+/* tarjeta4 */
+.tarjetabr-text.tarjetabr4 .titulo {
+  color: #bba14f;
+}
+
+.tarjetabr-pie.tarjetabr4 {
+  background-color: #bba14f;
+}
+
+/* Botones Flotantes */
+.sticky-caja {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -135px;
+  bottom: 7px;
+  width: 210px;
+  z-index: 1100;
+}
+
+.sticky li {
+  list-style-type: none;
+  height: 45px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  border-radius: 25px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.sticky li img {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sticky li p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.93rem;
+  padding-top: 8px;
+  padding-left: 30px;
+}
+.sticky li p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sticky li p a:hover {
+  text-decoration: underline;
+}
+.sticky li:hover {
+  margin-left: -80px;
+}
+
+.whatsapp {
+  background-color: #00bb2d;
+}
+.whatsapp:hover {
+  background-color: #005514;
+}
+
+.call {
+  background-color: #001296;
+}
+.call:hover {
+  background-color: #000630;
+}
+
+.message {
+  background-color: #ff1100;
+}
+.message:hover {
+  background-color: #990a00;
+}
+
+/* Apariencia Títulos */
+h1 {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 0;
+  padding: 0px 5px 0 5px;
+  font-size: 2.18rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+/* Los h2 son Títulos en color blanco con fondo azul */
+h2 {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  background-color: #20228c;
+  width: 100%;
+  font-size: 1.87rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Los h3 son Títulos en color naranja sin fondo */
+h3 {
+  color: #ff3b00;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.87rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Los h4 son Sub-títulos en color azul sin fondo */
+h4 {
+  color: #20228c;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.56rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Los h5 son Sub-títulos en color naranja sin fondo */
+h5 {
+  color: #ff3b00;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Apariencia parrafo en bloque color negro sin fondo */
+.parrafo-simple {
+  color: #292929;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+  text-align: justify;
+  margin: 0%;
+}
+@media only screen and (max-width: 480px) {
+  .parrafo-simple {
+    text-align: center;
+  }
+}
+
+/* Apariencia parrafo en bloque color naranja */
+.parrafo-simple-naranja {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+  background-color: #ff3b00;
+  text-align: justify;
+  margin: 0%;
+}
+@media only screen and (max-width: 480px) {
+  .parrafo-simple-naranja {
+    text-align: center;
+  }
+}
+
+/* Carousel */
+.backgrnd-carousel1 {
+  background-color: black;
+}
+
+/* Apariencia Encabezado Index */
+.encabezado-index {
+  background-image: url("../imagenes/tops/top-index.jpg");
+}
+
+/* Apariencia Encabezado Contacto */
+.encabezado-contacto {
+  background-image: url("../imagenes/tops/top-contacto.jpg");
+}
+
+/* Apariencia Encabezado Branding Packs */
+.encabezado-branding {
+  background-image: url("../imagenes/tops/top-branding.jpg");
+}
+
+/* Apariencia Encabezado Social Packs */
+.encabezado-social {
+  background-image: url("../imagenes/tops/top-social.jpg");
+}
+
+/* Apariencia Encabezado Portfolio */
+.encabezado-portfolio {
+  background-image: url("../imagenes/tops/top-portfolio.jpg");
+}
+
+/* Apariencia Encabezado Servicios */
+.encabezado-servicios {
+  background-image: url("../imagenes/tops/top-servicios.jpg");
+}
+
+/* Botón fondo naranja y marco blanco */
+.button-mas {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #ff3b00;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.12rem;
+}
+
+/*# sourceMappingURL=style.css.map */
