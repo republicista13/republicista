@@ -172,7 +172,7 @@ footer {
   font-size: 1.56rem;
   letter-spacing: -1px;
   margin: 0;
-  color: #bf5c06;
+  color: #975b00;
   text-shadow: 2px 2px 3px black;
 }
 .tarjetaserv-text .subtitulo {
@@ -192,7 +192,7 @@ footer {
   grid-template-rows: 1fr 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #bf5c06;
+  background-color: #975b00;
   align-items: center;
   justify-content: center;
 }
@@ -214,20 +214,20 @@ footer {
 
 /* tarjeta2 */
 .tarjetaserv-text.tarjetaserv2 .titulo {
-  color: #00b7ff;
+  color: #0031d0;
 }
 
 .tarjetaserv-pie.tarjetaserv2 {
-  background-color: #00b7ff;
+  background-color: #0031d0;
 }
 
 /* tarjeta3 */
 .tarjetaserv-text.tarjetaserv3 .titulo {
-  color: #ffae00;
+  color: #fc9700;
 }
 
 .tarjetaserv-pie.tarjetaserv3 {
-  background-color: #ffae00;
+  background-color: #fc9700;
 }
 
 /* tarjeta4 */
@@ -241,20 +241,20 @@ footer {
 
 /* tarjeta5 */
 .tarjetaserv-text.tarjetaserv5 .titulo {
-  color: #ff0095;
+  color: #df0082;
 }
 
 .tarjetaserv-pie.tarjetaserv5 {
-  background-color: #ff0095;
+  background-color: #df0082;
 }
 
 /* tarjeta6 */
 .tarjetaserv-text.tarjetaserv6 .titulo {
-  color: #001aff;
+  color: #0014c7;
 }
 
 .tarjetaserv-pie.tarjetaserv6 {
-  background-color: #001aff;
+  background-color: #0014c7;
 }
 
 /* tarjeta7 */
