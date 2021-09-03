@@ -15,6 +15,7 @@
     box-shadow: $sombra-caja;
     font-family: $fontype-sans-serif;
     text-align: center;
+    text-shadow: $sombra-textos;
     transition: 0.5s ease;
     margin: 30px 15px 30px 15px;
     &:hover {
@@ -42,7 +43,6 @@
         letter-spacing: -1px;
         margin: 0;
         color: map-get($brand-starter, color-starter);
-        text-shadow: $sombra-textos;
     }
     .subtitulo {
         color: $text-grisclaro;

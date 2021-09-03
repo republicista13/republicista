@@ -148,6 +148,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: "Manrope", sans-serif;
   text-align: center;
+  text-shadow: 2px 2px 3px black;
   transition: 0.5s ease;
   margin: 30px 15px 30px 15px;
 }
@@ -425,6 +426,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: "Manrope", sans-serif;
   text-align: center;
+  text-shadow: 2px 2px 3px black;
   transition: 0.5s ease;
   margin: 30px;
 }
@@ -450,7 +452,6 @@ footer {
   letter-spacing: -1px;
   margin: 0;
   color: #ff076e;
-  text-shadow: 2px 2px 3px black;
 }
 .tarjetapack-text .subtitulo {
   color: #bebebe;
@@ -531,6 +532,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: "Manrope", sans-serif;
   text-align: center;
+  text-shadow: 2px 2px 3px black;
   transition: 0.5s ease;
   margin: 30px 15px 30px 15px;
 }
@@ -557,7 +559,6 @@ footer {
   letter-spacing: -1px;
   margin: 0;
   color: #e60000;
-  text-shadow: 2px 2px 3px black;
 }
 .tarjetabr-text .subtitulo {
   color: #bebebe;
