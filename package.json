@@ -1,11 +1,19 @@
 {
-  "name": "republicista-rodriguezrodriguez",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "republicista-rodriguezrodriguez",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "Richard Rodriguez Rodriguez",
+        "email": "info@republicista.ar",
+        "url": "https://www.republicista.ar/"
+    },
+    "license": "ISC",
+    "description": "Republicista es la web que representa mi emprendimiento como Agencia de Publicidad y Marketing BTL",
+    "repository": {
+        "type": "git",
+        "url": "https://republicista13.github.io/republicista/"
+    }
 }
