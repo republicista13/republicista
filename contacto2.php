@@ -11,7 +11,7 @@
 $cabeceras = "From: $Correo\n" //La persona que envia el correo
  . "Reply-To: $Correo\n";
 $asunto = "From: Contacto Republicista.ar $Motivo\n"; //asunto aparecera en la bandeja del servidor de correo
-$email_to = "info@republicista.ar"; //cambiar por tu email
+$email_to = "republicista@gmail.com"; //cambiar por tu email
 $contenido = "$Nombre ha enviado un mensaje desde el sitio web www.republicista.ar\n"
 . "\n"
 . "Nombre: $Nombre\n"
