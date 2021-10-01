@@ -37,43 +37,43 @@
     font-size: nth($font-size, 6);
     letter-spacing: -1px;
     text-align: left;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-input,
-textarea {
-    width: 90%;
-    height: 35px;
-    background: #f6f6f6;
-    border: 1px solid #666666;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: nth($font-size, 7);
-    color: black;
-}
-
-textarea {
-    height: 90px;
-}
-
-#submit {
-    color: #f6f6f6;
-    width: 85px;
-    height: 35px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: $bg-naranjacorp;
-    text-decoration: none;
-    text-align: center;
-    font-family: $fontype-sans-serif;
-    font-size: nth($font-size, 6);
-    border-radius: 10px
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input,
+    textarea {
+        width: 90%;
+        height: 35px;
+        background: #f6f6f6;
+        border: 1px solid #666666;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: nth($font-size, 7);
+        color: black;
+    }
+    textarea {
+        height: 90px;
+    }
+    #submit {
+        color: #f6f6f6;
+        width: 85px;
+        height: 35px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: $bg-naranjacorp;
+        text-decoration: none;
+        text-align: center;
+        font-family: $fontype-sans-serif;
+        font-size: nth($font-size, 6);
+        border-radius: 10px
+    }
 }

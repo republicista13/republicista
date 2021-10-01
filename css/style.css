@@ -414,14 +414,16 @@ footer {
   letter-spacing: -1px;
   text-align: left;
 }
-
-label {
+.principal form {
+  margin: 0 auto;
+  width: 100%;
+}
+.principal label {
   display: block;
   margin-top: 10px;
 }
-
-input,
-textarea {
+.principal input,
+.principal textarea {
   width: 90%;
   height: 35px;
   background: #f6f6f6;
@@ -432,12 +434,10 @@ textarea {
   font-size: 1rem;
   color: black;
 }
-
-textarea {
+.principal textarea {
   height: 90px;
 }
-
-#submit {
+.principal #submit {
   color: #f6f6f6;
   width: 85px;
   height: 35px;
