@@ -3,7 +3,7 @@
 
 @$Nombre = htmlspecialchars($_POST['Nombre']);
 @$Motivo = htmlspecialchars($_POST['Motivo']);
-@$Teléfono = htmlspecialchars($_POST['Teléfono']);
+@$Empresa = htmlspecialchars($_POST['Teléfono']);
 @$Correo = htmlspecialchars($_POST['Correo']);
 @$Mensaje = htmlspecialchars($_POST['Mensaje']);
 
